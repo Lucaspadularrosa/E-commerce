@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  /* border: none; */
+  margin: 0 auto;
+  margin-top: 6.25rem;
+  max-width: 56.25rem;
+  /* height: 50rem; */
+}
+
+.card ul {
+  list-style: none;
+  padding: 0.9375rem;
+  display: flex;
+}
+
+.card ul li {
+  width: 3.125rem;
+  text-align: center;
+  padding: 0.625rem;
+  margin: 0.125rem;
+  border: 0.0625rem solid #0d6efd;
+  cursor: pointer;
+  background: #0d6efd;
+  color: aliceblue;
+}
+
+.foo {
+  background: black;
+  color: grey;
+}
+
+.card ul li:hover {
+  background: #085bd6;
+}
+
+.card ul li:active {
+  background: #085bd6;
+}
+
+.btn {
+  width: 150px;
+  margin: 10px;
+  margin-right: 5px;
+}
+
+@media (max-width: 700px) {
+  .card {
+    border: none;
+    margin-bottom: 100px;
+    max-height: 100vh;
+    max-height: 100vw;
+  }
+  .foo {
+    margin-top: 23px;
+  }
+}
