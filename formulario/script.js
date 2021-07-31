@@ -11,13 +11,14 @@ const obj = {
   password2: false,
 };
 
-console.log(obj);
+// console.log(obj);
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   chekInputs();
   validateForm();
   console.log(obj);
+  window.location = '../index.html';
 });
 
 function chekInputs() {
