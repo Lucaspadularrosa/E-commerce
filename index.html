@@ -21,7 +21,8 @@
       referrerpolicy="no-referrer"
     />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>E Commerce 👟</title>
+    <title>eCommerce</title>
+    <link rel="shortcut icon" href="./img/trainers.png" />
   </head>
   <body>
     <!-- Encabezado -->
@@ -62,7 +63,7 @@
           data-bs-target="#offcanvasRight"
           aria-controls="offcanvasRight"
         >
-          <i class="far fa-heart"></i>
+          <i class="fas fa-shopping-cart"></i>
         </button>
 
         <div
@@ -81,10 +82,13 @@
             ></button>
           </div>
           <div class="offcanvas-body"></div>
+          <button type="button" class="btn btn-primary">
+            Total <span class="badge bg-secondary"></span>
+          </button>
         </div>
 
         <a href="formulario/form.html"
-          ><i class="far fa-user"
+          ><i class="fas fa-user"
             ><span
               style="color: aliceblue; padding: 10px"
               class="span"
@@ -192,263 +196,324 @@
             class="card-img-top"
             alt="..."
         /></a>
+
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card1" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="img/w1080df8_nb_02_i_3.jpg" class="card-img-top" alt="..." />
+        <a href="">
+          <img src="img/w1080df8_nb_02_i_3.jpg" class="card-img-top" alt="..."
+        /></a>
         <div class="card-body">
-          <p class="card-text">Price: $4330.07 bulk of the card's content.</p>
-        </div>
-        <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
-        </button>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="img/zapatillas-new-balance-mujer-running-fresh-foam-1080-v8-w1080cs8_nb_02_i_5.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card2" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="img/w1080wp8_nb_02_i_4.jpg" class="card-img-top" alt="..." />
+        <a href=""
+          ><img
+            src="img/zapatillas-new-balance-mujer-running-fresh-foam-1080-v8-w1080cs8_nb_02_i_5.jpg"
+            class="card-img-top"
+            alt="..."
+        /></a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card3" class="fas fa-shopping-cart btn-two"></i>
+        </button>
+      </div>
+      <div class="card" style="width: 18rem">
+        <a href=""
+          ><img src="img/w1080wp8_nb_02_i_4.jpg" class="card-img-top" alt="..."
+        /></a>
+        <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <button class="heart">
+          <i id="card4" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
     </div>
     <h2 class="text-center mt-5 mb-5" id="rem-hom">REMERAS HOMBRE</h2>
     <div class="container d-flex justify-content-evenly contenedor">
       <div class="card" style="width: 18rem">
-        <img src="img/mt730061.jpg" class="card-img-top btn" alt="..." />
+        <a href="">
+          <img src="img/mt730061.jpg" class="card-img-top btn" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card5" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="img/mt93180tor_40.jpg" class="card-img-top" alt="..." />
+        <a href="">
+          <img src="img/mt93180tor_40.jpg" class="card-img-top" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card6" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img
-          src="img/remera-hombre-new-balance-accelerate-short-sleeve-mt93180vsb_40.jpg"
-          class="card-img-top"
-          alt="..."
-        />
+        <a href="">
+          <img
+            src="img/remera-hombre-new-balance-accelerate-short-sleeve-mt93180vsb_40.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card7" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img
-          src="img/remera-hombre-new-balance-negra.jpg"
-          class="card-img-top"
-          alt="..."
-        />
+        <a href="">
+          <img
+            src="img/remera-hombre-new-balance-negra.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card8" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
     </div>
     <h2 class="text-center mt-5 mb-5" id="zap-ni">ZAPATILLAS NIÑOS</h2>
     <div class="container d-flex justify-content-evenly contenedor">
       <div class="card" style="width: 18rem">
-        <img src="img/zapas-niños1.jpg" class="card-img-top btn" alt="..." />
+        <a href="">
+          <img src="img/zapas-niños1.jpg" class="card-img-top btn" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card9" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="img/zapas-niños2.jpg" class="card-img-top" alt="..." />
+        <a href="">
+          <img src="img/zapas-niños2.jpg" class="card-img-top" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card10" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="img/zapas-niños3.jpg" class="card-img-top" alt="..." />
+        <a href="">
+          <img src="img/zapas-niños3.jpg" class="card-img-top" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card11" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="img/zapas-niños4.jpg" class="card-img-top" alt="..." />
+        <a href="">
+          <img src="img/zapas-niños4.jpg" class="card-img-top" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card12" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
     </div>
     <h2 class="text-center mt-5 mb-5">BUZOS Y CAMPERAS</h2>
     <div class="container d-flex justify-content-evenly contenedor">
       <div class="card" style="width: 18rem">
-        <img src="img/buzo1.jpg" class="card-img-top btn" alt="..." />
+        <a href="">
+          <img src="img/buzo1.jpg" class="card-img-top btn" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card13" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="img/buzo2.jpg" class="card-img-top" alt="..." />
+        <a href="">
+          <img src="img/buzo2.jpg" class="card-img-top" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card14" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="img/buzo3.jpg" class="card-img-top" alt="..." />
+        <a href="">
+          <img src="img/buzo3.jpg" class="card-img-top" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card15" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="img/buzo4.jpg" class="card-img-top" alt="..." />
+        <a href="">
+          <img src="img/buzo4.jpg" class="card-img-top" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card16" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
     </div>
     <h2 class="text-center mt-5 mb-5" id="run">RUNNING</h2>
     <div class="container d-flex justify-content-evenly contenedor">
       <div class="card" style="width: 18rem">
-        <img src="img/running1.jpg" class="card-img-top btn" alt="..." />
+        <a href="">
+          <img src="img/running1.jpg" class="card-img-top btn" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card17" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="img/running2.jpg" class="card-img-top" alt="..." />
+        <a href="">
+          <img src="img/running2.jpg" class="card-img-top" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card18" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="img/running3.jpg" class="card-img-top" alt="..." />
+        <a href="">
+          <img src="img/running3.jpg" class="card-img-top" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card19" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
       <div class="card" style="width: 18rem">
-        <img src="img/running4.jpg" class="card-img-top" alt="..." />
+        <a href="">
+          <img src="img/running4.jpg" class="card-img-top" alt="..." />
+        </a>
         <div class="card-body">
+          <b class="price">$</b><span class="price"><b>3000</b></span>
           <p class="card-text">
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
         </div>
         <button class="heart">
-          <i class="fas fa-heart btn-two"></i>
+          <i id="card20" class="fas fa-shopping-cart btn-two"></i>
         </button>
       </div>
     </div>

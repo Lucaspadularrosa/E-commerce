@@ -33,12 +33,12 @@ i {
 }
 
 .red {
-  color: red;
+  color: brown;
 }
 
-.heart i:hover {
-  color: crimson;
-}
+/* .heart i:hover {
+  /* color: red; */
+/* } */
 
 .form-control {
   margin-top: 10px;
@@ -48,6 +48,10 @@ i {
 
 .buscador {
   background: #fff;
+}
+
+.price {
+  font-size: 20px;
 }
 
 @media screen and (max-width: 640px) {
