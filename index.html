@@ -73,7 +73,7 @@
           aria-labelledby="offcanvasRightLabel"
         >
           <div class="offcanvas-header">
-            <h5 id="offcanvasRightLabel">Carrito</h5>
+            <h5 id="offcanvasRightLabel">Carrito 🛒</h5>
             <button
               type="button"
               class="btn-close text-reset"
@@ -82,9 +82,56 @@
             ></button>
           </div>
           <div class="offcanvas-body"></div>
-          <button type="button" class="btn btn-primary">
+          <button type="button" style="border: 0; cursor: auto">
             Total <span class="badge bg-secondary"></span>
           </button>
+          <button
+            type="button"
+            class="btn btn-primary exampleModal"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            style="border-radius: 0px"
+          >
+            Comprar
+          </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Compras</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                  <button
+                    class="btn btn-secondary modal-price"
+                    data-bs-dismiss="modal"
+                    style="cursor: auto"
+                  >
+                    0
+                  </button>
+                  <a
+                    href="./productos_carrito/index.html"
+                    type="button"
+                    class="btn btn-primary"
+                  >
+                    Pagar
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <a href="formulario/form.html"
@@ -642,7 +689,7 @@
     <!-- Footer -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"

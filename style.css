@@ -67,6 +67,10 @@ i {
     display: none;
   }
 
+  .price {
+    font-size: 17px;
+  }
+
   h2 {
     font-size: 17px;
   }
