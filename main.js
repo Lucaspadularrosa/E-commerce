@@ -5,11 +5,8 @@ const btn = document.querySelectorAll('.heart');
 const offCanvas = document.querySelector('.offcanvas-body');
 const span = document.querySelector('.span');
 const badge = document.querySelector('.badge');
-const pay = document.querySelector('.pay');
 const modalBody = document.querySelector('.modal-body');
-const modalPrice = document.querySelector('.modal-price');
-console.dir(modalPrice);
-badge.innerHTML = 0;
+const btnPay = document.querySelector('.exampleModal');
 
 const user = window.localStorage.username;
 if (user === undefined) {
@@ -24,8 +21,9 @@ for (let i = 0; i < btn.length; i++) {
 }
 
 let total = 0;
+const srcImg = [];
 
-chil.map((number) =>
+const funcionExport = chil.map((number) =>
   number.addEventListener('click', function () {
     const price =
       number.parentNode.parentNode.childNodes[3].childNodes[2].innerText;
@@ -53,42 +51,7 @@ chil.map((number) =>
       </div>`;
       total += priceParse;
       badge.innerHTML = '$' + total;
-      modalPrice.innerHTML = '$' + total;
-      modalBody.innerHTML += `<div class="card mb-3" style="max-width: 940px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="${img}" class="img-fluid rounded-start" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p> $${price}</p>
-            <div class="btn-toolbar mt-3" role="toolbar" aria-label="Toolbar with button groups">
-            <div class="btn-group me-2" role="group" aria-label="First group">
-            <button type="button" class="btn btn-primary">37</button>
-            <button type="button" class="btn btn-primary">38</button>
-            <button type="button" class="btn btn-primary">39</button>
-            <button type="button" class="btn btn-primary">40</button>
-            <button type="button" class="btn btn-primary">41</button>
-            <button type="button" class="btn btn-primary">42</button>
-            </div>
-            <div class="btn-group">
-            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-           Cantidad
-          </button>
-          <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">1</a></li>
-          <li><a class="dropdown-item" href="#">2</a></li>
-          <li><a class="dropdown-item" href="#">3</a></li>
-          <li><a class="dropdown-item" href="#">4</a></li>
-          <li><a class="dropdown-item" href="#">5</a></li>
-          </div>
-            <p class="card-text mt-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div>`;
+      srcImg.push(img);
     } else {
       for (let i = 0; i < offCanvas.childNodes.length; i++) {
         if (numberId === offCanvas.childNodes[i].id) {
@@ -98,7 +61,13 @@ chil.map((number) =>
       }
       total -= priceParse;
       badge.innerHTML = '$' + total;
-      modalPrice.innerHTML = '$' + total;
+      const img =
+        number.parentNode.parentElement.childNodes[1].firstElementChild.src;
+      for (let i = 0; i < srcImg.length; i++) {
+        if (srcImg[i] === img) {
+          srcImg.splice(i, 1);
+        }
+      }
     }
   })
 );
@@ -118,3 +87,20 @@ const buscador = (e) => {
 };
 
 search.addEventListener('keyup', buscador);
+
+btnPay.addEventListener('click', (e) => {
+  console.log('fin');
+  const arrFinal = [];
+  srcImg.forEach((src) => arrFinal.push(src));
+  exportArr(arrFinal);
+});
+
+const exportArr = (arrFinal, priceParse) => {
+  localStorage.setItem('localstorage', arrFinal);
+  chil.map((number) => {
+    const price =
+      number.parentNode.parentNode.childNodes[3].childNodes[2].innerText;
+    console.log(price + ' hola que onda');
+    localStorage.setItem('precio', price);
+  });
+};

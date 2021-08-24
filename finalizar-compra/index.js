@@ -43,9 +43,6 @@ btnCompras.addEventListener('click', (e) => {
     console.log('error2');
     return;
   }
-  // form.addEventListener('submit', () => {
-  // });
-  console.dir(objLabel.checked);
-  console.log('todo piola');
+
   window.location = '../index.html';
 });
